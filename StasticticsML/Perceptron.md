@@ -6,7 +6,7 @@
 直线的法向量（定义）：**空间中与直线垂直的非零向量**
 
 
-![image-20200703145922085](C:\Users\13550\AppData\Roaming\Typora\typora-user-images\image-20200703145922085.png)
+![image-20200703145922085](https://github.com/Aragron-moon/MachineLearning/blob/master/StasticticsML/picture1.png)
 
 如上图所示，对于直线l而言 交坐标轴分别于MN两点，m向量为l的方向向量，n为l的法向量。
 
@@ -19,9 +19,7 @@ Ax1 + Bx2 + C = 0 (x1和x2分别表示平面直角坐标系中的两个坐标轴
 
 感知机是指接受多个信号，仅输出一个信号（模拟神经元），结构如下图所示：
 
-![image-20200703154728601](C:\Users\13550\AppData\Roaming\Typora\typora-user-images\image-20200703154728601.png)
-
-
+![image-20200703154728601](https://github.com/Aragron-moon/MachineLearning/blob/master/StasticticsML/picture2.png)
 
 其中x1和x2是输入信号，y是输出信号，w1和w2是输入信号对应的权重，数学表达式如下：
 $$
@@ -74,7 +72,7 @@ b = b + \alpha yi
 $$
 **参数更新的可视化**
 
-![1596430609(1)](C:\Users\13550\Desktop\1596430609(1).png)
+![1596430609(1)](https://github.com/Aragron-moon/MachineLearning/blob/master/StasticticsML/picture3.png)
 
 上图中的w是当前学习的超平面的法向量，x是一个误分类点（方便理解 假设参数b=0，也可以把参数b考虑到w中）。因为（w*x）< 0，所以才会将其误分类，从向量的假赌来考虑，正是w和x的夹角＞90，w和x的乘积才会小于0，要纠正这一个误分类点，就必须缩小二者之间的夹角，所以要将w向x方向进行调整，采用w=w+x的方法进行调整！
 
